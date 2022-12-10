@@ -11,6 +11,8 @@ let holderName = document.querySelector("#holderName"),
     
     
     holderName.addEventListener("input", (event) => {
+        event.target.value = event.target.value.replace(/[^\a-zA-Z ]/g, '')
+        
         holderNameCard.textContent = event.target.value
     })
 
