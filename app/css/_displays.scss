@@ -1,0 +1,19 @@
+
+
+.errorBorder {
+    box-shadow: 0 0 0 1px red;
+}
+
+
+input:focus {
+    outline: hsl(249, 99%, 64%) solid 1px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.error {
+    color: hsl(0, 100%, 66%);
+    // visibility: hidden;
+}

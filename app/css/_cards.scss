@@ -1,0 +1,116 @@
+#card {
+    position: relative;
+    width: 100%;
+    height: 36%;
+    background: url('../../images/bg-main-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    margin-bottom: 40px;
+    
+    #cardBack, #cardFront {
+        width: 285px;
+        height: 155px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+ 
+        #cardBack, #cardFront {
+            width: 450px;
+            height: 250px;
+        }
+    }
+    @media (min-width: $tablet-breakpoint) and (max-width: 1419px) {
+        #cardBack, #cardFront {
+            width: 375px;
+            height: 210px;
+        }
+    }
+    
+    #cardFront {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        filter: drop-shadow(10px 10px 20px hsl(278, 26%, 29%));
+
+        @media (min-width: $tablet-breakpoint) {
+            top: 20%;
+            left: 25%;
+        }
+        
+        background: url('../../images/bg-card-front.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5%;
+                
+        #logo {
+            width: 55px;
+            height: 30px;
+
+            @media (min-width: $tablet-breakpoint) {
+                width: 95px;
+                height: 50px;
+            }
+        }
+        #cardNumberCard {
+            letter-spacing: 2.3px;
+        }
+        #infoCard {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            
+        }
+    }
+    #cardBack {
+        position: absolute;
+        top: 14%;
+        right: 5%;
+
+        @media (min-width: $tablet-breakpoint) {
+            top: 52%;
+            left: 45%;
+            filter: drop-shadow(0px 10px 30px hsl(278, 26%, 29%));
+
+        }
+        
+        background: url('../../images/bg-card-back.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        #cvcCard {
+            position: relative;
+            top: 45%;
+            left: 80%;
+            font-size: 12px;
+
+            @media (min-width: $tablet-breakpoint) {
+                font-size: 1rem;
+            }
+            
+        }
+    }
+
+    @media (min-width: $tablet-breakpoint) { //>= 500px
+        background: url('../../images/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-bottom: 0;
+
+        #cardNumberCard{
+            font-size: 26px;
+        }
+        #holderNameCard, #expiracyMonthCard, #expiracyYearCard {
+            font-size: 1rem;
+        }
+    }
+
+}

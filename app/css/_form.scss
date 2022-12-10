@@ -1,0 +1,57 @@
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 30px 25px 40px;
+
+    @media (min-width: $tablet-breakpoint) {
+        padding-left: 30%;
+        padding-right: 20%;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: inline-block;
+        max-width: fit-content;
+        color: hsl(278, 68%, 11%);
+    }
+    
+    input {
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid rgb(217, 216, 217);
+        text-transform: capitalize;
+    }
+    input[type=text] {
+        margin-bottom: 20px;
+    }
+    .relative {
+        position: relative;
+    }
+    small {
+        position: absolute;
+        bottom: 20px;
+        font-size: 12px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        margin-bottom: 10px;
+    }
+    .flex {
+        display: flex;
+        gap: 10px;
+        
+    }
+
+}

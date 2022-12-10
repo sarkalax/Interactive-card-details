@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+// $mobile-breakpoint: ; not in a media query
+$tablet-breakpoint: 500px;
+$desktop-breakpoint: 1320px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    min-width: 375px;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+
+    @media (min-width: $tablet-breakpoint) {
+        display: grid;
+        grid-template-columns: 35% auto;
+    }
+    
+}
+#submitBttn, button {
+    display: block;
+    width: 100%;
+    color: white;
+    background: rgba(34, 9, 48, 1);
+    border: none;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 0;
+    transition: 300ms ease-in-out;
+}
+
+#submitBttn:hover {
+    opacity: 80%;
+}
+button:hover {
+    opacity: 80%;
+}

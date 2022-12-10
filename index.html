@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="app/css/style.css">
+  <script src="app/script/script.js" defer></script>
+</head>
+<body>
+
+  <section id="card">
+    <div id="cardBack">
+     <div id="cvcCard">000</div>
+    </div>
+    <div id="cardFront">
+      <img src="images/card-logo.svg" alt="logo" id="logo">
+      <div id="cardNumberCard">0000 0000 0000 0000</div>
+      <div id="infoCard">
+        <span id="holderNameCard">Jane Appleseed</span>
+        <div>
+          <span id="expiracyMonthCard">00</span>/<span id="expiracyYearCard">00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="form">
+    <form action="/">
+      <div class="relative">
+        <label for="holderName">Cardholder name</label>
+        <input type="text" name="holderName" id="holderName" placeholder="e.g. Jane Appleseed"  autofocus>
+        <small class="error"></small><br>
+      </div>
+
+      <div class="relative">
+        <label for="cardNumber">Card number</label>
+        <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+        <small class="error"></small><br>
+      </div>
+
+      <div class="grid">
+
+        <div class="relative"> 
+            <label for="expiracyMonth">Exp. date (mm/yy)</label> 
+            <div class="flex">
+                <input type="text" name="expiracyMonth" id="expiracyMonth" placeholder="MM" >
+
+                <input type="text" name="expiracyYear" id="expiracyYear" placeholder="YY" >
+                
+                <small class="error"></small><br>
+            </div>
+        </div> 
+        
+        <div class="relative">
+          <label for="cvc">Cvc</label><br>
+          <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
+          <small class="error"></small><br>
+        </div>
+      </div>
+  
+      <input type="submit" id="submitBttn" value="Confirm">
+    </form>
+
+    <section id="thankU" class="noDisplay">
+      <img src="images/icon-complete.svg" alt="complete icon">
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button id="backBttn">Back to card details</button>
+    </section>
+  </section>
+
+  
+</body>
+</html>
