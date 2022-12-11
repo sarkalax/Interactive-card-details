@@ -59,10 +59,12 @@ let holderName = document.querySelector("#holderName"),
     let form = document.querySelector("form")
     form.addEventListener("submit", (event) => {
         
-        event.preventDefault() 
-        
         validity = 0;
         checkInputs()
+
+        if (validity < 5) {
+            event.preventDefault()
+        }
 
         if (validity === 5) { //tzn. jsou-li všechny validní
             thankUPage()      // přejde na další stránku
