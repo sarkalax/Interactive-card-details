@@ -35,9 +35,9 @@ let holderName = document.querySelector("#holderName"),
             expiracyMonth.value = `0${month[0]}`
             expiracyMonthCard.textContent= `0${month[0]}`
         }
-        // if (expiracyMonth.value.length > 2) {
-        //     expiracyMonth.value = "12"
-        // }
+        else if (expiracyMonth.value.length > 2) {
+            expiracyMonth.value = "12"
+        }
     })
 
     expiracyYear.addEventListener("input", (event) => {
