@@ -2,4 +2,4 @@
 
 Ověřování formuláře - RegExp, responsiv design 
 
-[open](https://sarysx.github.io/Interactive-card-details/)
+[open](https://sarkalax.github.io/Interactive-card-details/)
