@@ -1,4 +1,4 @@
-# Interactive-card-details from Frontend mentor
+# Interactive-card-details
 
 Ověřování formuláře - RegExp, responsiv design 
 
